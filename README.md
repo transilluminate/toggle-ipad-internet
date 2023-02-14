@@ -15,18 +15,22 @@ The kids are angry with this!
 ## Instructions
 
 1. find the MAC addresses of your devices to block / unblock:
-`$ sudo apt-get -y install nmap && sudo -O nmap 192.168.0.1/24`
+```
+$ sudo apt-get -y install nmap && sudo -O nmap 192.168.0.1/24
+```
 or
-`$ cat /var/lib/misc/dnsmasq.leases`
+```
+$ cat /var/lib/misc/dnsmasq.leases
+```
 
-2. create an array of devices to block / unblock:
+2. create an array of devices to block / unblock, edit `toggle-ipad-internet.sh`:
 ```
 iPad1="aa:bb:cc:dd:ee:ff"
 iPad2="aa:bb:cc:dd:ee:ff"
 declare -a mac_addresses=($iPad1 $iPad2)
 ```
 
-3. setup your the internet interface:
+3. setup your the internet interface, again edit `toggle-ipad-internet.sh`:
 ```
 WAN=tun0	# if using a VPN
 #WAN=eth1	# if routing via ethernet
