@@ -9,10 +9,9 @@
 # devices to block / unblock
 iPad1="aa:bb:cc:dd:ee:ff"
 iPad2="aa:bb:cc:dd:ee:ff"
-
 declare -a mac_addresses=($iPad1 $iPad2)
 
-# the internet device:
+# internet interface:
 WAN=tun0
 #WAN=eth1
 
