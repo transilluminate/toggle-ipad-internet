@@ -1,6 +1,7 @@
 #!/bin/bash
-# Copyright 2023 Adrian Robinson <adrian dot j dot robinson at gmail dot com>
-# https://github.com/transilluminate/toggle-ipad-internet
+# Copyright 2023 Adrian Robinson
+# email: $ echo YWRyaWFuIGRvdCBqIGRvdCByb2JpbnNvbiBhdCBnbWFpbCBkb3QgY29tCg== | base64 --decode
+# github: https://github.com/transilluminate/toggle-ipad-internet
 
 # find the MAC addresses of your devices to block/unblock:
 #	$ sudo apt-get -y install nmap && sudo -O nmap 192.168.0.1/24
